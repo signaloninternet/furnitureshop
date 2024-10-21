@@ -40,7 +40,7 @@ function Homepage() {
 
   return (
     <div className="relative w-screen h-screen flex flex-col sm:flex-row sm:h-[76vh]">
-      <div className="absolute top-0 left-0 w-full sm:w-1/2">
+      <div className="absolute top-0 left-0 w-full sm:w-3/5">
         <Navbar />
       </div>
 
