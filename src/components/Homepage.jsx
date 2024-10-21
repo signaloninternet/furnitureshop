@@ -3,6 +3,10 @@ import Navbar from './Navbar';
 import image1 from '../assets/desktop-image-hero-1.jpg';
 import image2 from '../assets/desktop-image-hero-2.jpg';
 import image3 from '../assets/desktop-image-hero-3.jpg';
+import iconleft from '../assets/icon-angle-left.svg';
+import iconright from '../assets/icon-angle-right.svg';
+import arrow from '../assets/icon-arrow.svg';
+
 
 function Homepage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -53,14 +57,14 @@ function Homepage() {
         <p className="text-gray-600 mb-6 font-light font-sans">{data[currentSlide].description}</p>
         <button className="text-sm font-bold tracking-wide uppercase pb-2 hover:text-gray-700 flex flex-row gap-8 items-center">
           <p className='tracking-[10px] font-mono'>Shop Now</p>
-          <img src="src/assets/icon-arrow.svg" alt="Shop Now Arrow" />
+          <img src={arrow} alt="Shop Now Arrow" />
         </button>
         <div className="flex sm:absolute sm:bottom-0 sm:left-0 space-x-4 mt-8 bg-black py-3 px-5 gap-3">
           <button onClick={handlePrev} className="text-2xl">
-            <img src="src/assets/icon-angle-left.svg" alt="Previous" />
+            <img src={iconleft} alt="Previous" />
           </button>
           <button onClick={handleNext} className="text-2xl">
-            <img src="src/assets/icon-angle-right.svg" alt="Next" />
+            <img src={iconright} alt="Next" />
           </button>
         </div>
       </div>
